@@ -1,13 +1,17 @@
 /* start of CSS */
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 * {
   box-sizing: border-box;
 }
 
+/* the color of the webpage */
+
 body {
   background-color: #F8F8FF;
 }
+
+/* paragraph/body text formatting */
 
 p {
   font-family: Arial, sans-serif;
@@ -15,13 +19,17 @@ p {
   font-size: 15px;
 }
 
+/* heading text formatting */
+
 h2 {
   font-family: Raleway, sans-serif;
   color: #800000;
 }
 
+/* formatting the box that holds all the events */
+
 .container {
-  float:right;
+  float: right;
   margin-top: 10px;
   background: #FF7F50;
   border-radius: 10px;
@@ -31,20 +39,28 @@ h2 {
   box-sizing: border-box;
 }
 
+/* changing the size of the date */
+
 .content span {
   font-size: 17px;
 }
 
-.image{
+/* formatting where the images will be in the container box */
+
+.image {
   float: right;
   padding-left: 10px;
 }
+
+/* formatting the image itself */
 
 img {
   width: 150px;
   height: 150px;
   border-radius: 50%;
 }
+
+/* making the center line on the page */
 
 .line {
   position: absolute;
@@ -55,4 +71,3 @@ img {
   top: 20px;
   transform: translateX(-50%);
 }
-
