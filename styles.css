@@ -33,12 +33,13 @@ h1 {
   font-style: italic;
 }
 
-/* formatting the box that holds all the events */
+/* formatting the boxes that hold all the events */
 
 .container {
   float: right;
   margin-top: 10px;
-  MARGIN-RIGHT: 20px;
+  margin-right: 20px;
+  margin-bottom:10px;
   background: #F8F8FF;
   border-radius: 10px;
   padding: 30px;
@@ -46,6 +47,8 @@ h1 {
   position: relative;
   box-sizing: border-box;
 }
+
+/* formatting the box that holds the bio section */
 
 .bio {
   float: left;
@@ -66,20 +69,25 @@ h1 {
   font-style: italic;
 }
 
-/* formatting where the images will be in the container box */
+/* formatting where the images will be in the container boxes */
 
 .image {
   float: right;
-  float: center;
   padding-left: 10px;
+}
+
+.bioimage {
+  position: relative;
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
 
 /* formatting the image itself */
 
 img {
   object-fit: cover;
-  width: 250px;
-  height: 250px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
  
 }
@@ -88,10 +96,41 @@ img {
 
 .line {
   position: absolute;
-  height: 3000px;
+  height: 500%;
   width: 10px;
   background: #3A506B;
   left: 40%;
   top: 20px;
   transform: translateX(-50%);
+}
+
+/* LINES 108 TO 130 ADAPTD FROM https://www.w3schools.com/howto/howto_css_timeline.asp */
+/* making the small triangles beside the container and the dots on the line itself, needed guidance */
+/* triangles beside content boxes to point at space on the timeline */
+
+.container::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  left: -10px;
+  top: 40px;
+  width: 0;
+  z-index: 1;
+  border: medium solid #F8F8FF;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #F8F8FF transparent transparent;
+}
+
+/* dots beside content boxes to represent space on the timeline */
+
+.container::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: -41.5px;
+  background-color: #3A506B;
+  top: 39px;
+  border-radius: 50%;
+  z-index: 1;
 }
