@@ -8,14 +8,14 @@
 /* the color of the webpage */
 
 body {
-  background-color: #F8F8FF;
+  background-color: #5BC0BE;
 }
 
 /* paragraph/body text formatting */
 
 p {
-  font-family: Arial, sans-serif;
-  color: #F8F8FF;
+  font-family: Raleway, sans-serif;
+  color: #1C2541;
   font-size: 15px;
 }
 
@@ -23,7 +23,14 @@ p {
 
 h2 {
   font-family: Raleway, sans-serif;
-  color: #800000;
+  color: #0B132B;
+}
+
+h1 {
+  font-family: Raleway, sans-serif;
+  font-size: 40px;
+  color: #0B132B;
+  font-style: italic;
 }
 
 /* formatting the box that holds all the events */
@@ -31,7 +38,8 @@ h2 {
 .container {
   float: right;
   margin-top: 10px;
-  background: #FF7F50;
+  MARGIN-RIGHT: 20px;
+  background: #F8F8FF;
   border-radius: 10px;
   padding: 30px;
   width: calc(60% - 50px);
@@ -39,25 +47,41 @@ h2 {
   box-sizing: border-box;
 }
 
+.bio {
+  float: left;
+  margin-top: 10px;
+  margin-left:20px;
+  background: #F8F8FF;
+  border-radius: 10px;
+  padding: 35px;
+  width: calc(40% - 50px);
+  position: relative;
+  box-sizing: border-box;
+}
+
 /* changing the size of the date */
 
 .content span {
-  font-size: 17px;
+  font-size: 15px;
+  font-style: italic;
 }
 
 /* formatting where the images will be in the container box */
 
 .image {
   float: right;
+  float: center;
   padding-left: 10px;
 }
 
 /* formatting the image itself */
 
 img {
-  width: 150px;
-  height: 150px;
+  object-fit: cover;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
+ 
 }
 
 /* making the center line on the page */
@@ -66,7 +90,7 @@ img {
   position: absolute;
   height: 3000px;
   width: 10px;
-  background: #800000;
+  background: #3A506B;
   left: 40%;
   top: 20px;
   transform: translateX(-50%);
