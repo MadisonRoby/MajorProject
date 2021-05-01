@@ -33,13 +33,20 @@ h1 {
   font-style: italic;
 }
 
-/* formatting the boxes that hold all the events */
+/* changing the size of the date */
+
+span {
+  font-size: 17px;
+  font-style: italic;
+}
+
+/* formatting the boxes that hold all the events, line 53 adapted from https://www.youtube.com/watch?v=-uzOuGlUfDQ*/
 
 .container {
   float: right;
   margin-top: 10px;
   margin-right: 20px;
-  margin-bottom:10px;
+  margin-bottom: 10px;
   background: #F8F8FF;
   border-radius: 10px;
   padding: 30px;
@@ -48,25 +55,18 @@ h1 {
   box-sizing: border-box;
 }
 
-/* formatting the box that holds the bio section */
+/* formatting the box that holds the bio section, line 67 adapted from https://www.youtube.com/watch?v=-uzOuGlUfDQ */
 
 .bio {
   float: left;
   margin-top: 10px;
-  margin-left:20px;
+  margin-left: 20px;
   background: #F8F8FF;
   border-radius: 10px;
   padding: 35px;
   width: calc(40% - 50px);
   position: relative;
   box-sizing: border-box;
-}
-
-/* changing the size of the date */
-
-.content span {
-  font-size: 15px;
-  font-style: italic;
 }
 
 /* formatting where the images will be in the container boxes */
@@ -89,14 +89,13 @@ img {
   width: 200px;
   height: 200px;
   border-radius: 50%;
- 
 }
 
 /* making the center line on the page */
 
 .line {
   position: absolute;
-  height: 500%;
+  height: 572%;
   width: 10px;
   background: #3A506B;
   left: 40%;
@@ -104,8 +103,11 @@ img {
   transform: translateX(-50%);
 }
 
-/* LINES 108 TO 130 ADAPTD FROM https://www.w3schools.com/howto/howto_css_timeline.asp */
+/* LINES 112 TO 137 ADAPTED FROM https://www.w3schools.com/howto/howto_css_timeline.asp 
+took the base code and changed the attributes (color, size, position, etc.) to fit this website better */
+
 /* making the small triangles beside the container and the dots on the line itself, needed guidance */
+
 /* triangles beside content boxes to point at space on the timeline */
 
 .container::before {
@@ -133,4 +135,58 @@ img {
   top: 39px;
   border-radius: 50%;
   z-index: 1;
+}
+
+/* hiding the images, videos, and text so that it can be loaded in via "onClick" event */
+
+.image {
+  visibility: hidden;
+}
+
+.video {
+  visibility: hidden;
+}
+
+#content1 {
+  visibility: hidden;
+}
+
+#content2 {
+  visibility: hidden;
+}
+
+#content3 {
+  visibility: hidden;
+}
+
+#content4 {
+  visibility: hidden;
+}
+
+#content5 {
+  visibility: hidden;
+}
+
+#content6 {
+  visibility: hidden;
+}
+
+#content7 {
+  visibility: hidden;
+}
+
+#content8 {
+  visibility: hidden;
+}
+
+#content9 {
+  visibility: hidden;
+}
+
+#content10 {
+  visibility: hidden;
+}
+
+#content11 {
+  visibility: hidden;
 }
